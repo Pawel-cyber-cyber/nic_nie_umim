@@ -7,5 +7,25 @@
 </head>
 <body>
     <p>paragraf</p>
+
+    <script type="text/javascript">
+        function zegar()
+        {
+          var dzisiaj = new Date();
+          var dzien = dzisiaj.getDate();
+          var miesiac = dzisiaj.getMonth()+1;
+          var rok = dzisiaj.getFullYear();
+          var godzina = dzisiaj.getHours();
+          var minuty = dzisiaj.getMinutes();
+          var sekunda = dzisiaj.getSeconds();
+        document.getElementById("zegar").innerHTML = +dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuty+":"+sekunda+
+         
+        //  document.write("<b>"+dzien+"/"+miesiac+"/"+rok+"</b> Godzina <b>"+godzina+":"+minuty+":"+sekunda+"</b>");
+          setTimeout("zegar()",1000);
+        }
+         
+         
+         
+        </script>
 </body>
 </html>
